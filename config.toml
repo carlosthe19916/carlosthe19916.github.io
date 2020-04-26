@@ -1,0 +1,52 @@
+baseURL = "https://carlosthe19916.github.io/"
+languageCode = "en-us"
+theme = "raditian"
+
+# Plugins
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "css/main.css"
+  [[params.plugins.css]]
+  URL = "css/rad-icons.css"
+  [[params.plugins.css]]
+  URL = "css/custom.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "js/rad-animations.js"
+  [[params.plugins.js]]
+  URL = "js/sticky-header.js"
+  [[params.plugins.js]]
+  URL = "js/library/fontfaceobserver.js"
+
+
+# navigation
+[menu]
+
+#   [[menu.header]]
+#   name = "Talks"
+#   URL = "#experience"
+#   weight = 2
+
+
+#   [[menu.footer]]
+#   name = "Talks"
+#   URL = "#experience"
+#   weight = 2
+
+[params]
+
+  googleTagManagerID = "UA-164557003-1" # Google Analytics works with Google Tag Manager
+
+  [params.logo]
+    text1 = "carlosthe19916"
+    text2 = "Carlos Feria"
+
+  [params.footer]
+      copyright = "© All rights reserved."
+    #   [params.footer.radity_logo]
+    #     x = "img/general/design-and-code-radity.png"
+    #     _2x = "img/general/design-and-code-radity@2x.png"
+    #     alt = "Design & Code - Radity"
