@@ -19,6 +19,9 @@ install:
 
 script:
   - hugo --gc --minify
+  - for d in presentations/*; do
+      hugo --gc --minify --source "$d" --destination ../../public/"$d"
+    done
 
 deploy:
   provider: pages
