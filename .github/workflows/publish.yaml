@@ -20,7 +20,9 @@ concurrency:
 
 jobs:
   gh-pages:
-    name: "Github pages"
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -38,4 +40,5 @@ jobs:
         with:
           path: "./build"
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
