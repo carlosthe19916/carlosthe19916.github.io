@@ -21,6 +21,10 @@ spec:
   - name: dnsutils
     image: registry.k8s.io/e2e-test-images/agnhost:2.39
     imagePullPolicy: IfNotPresent
+    command:
+      - /bin/sh
+      - -c
+      - "sleep 3600"
   restartPolicy: Always
 EOF
 ```
